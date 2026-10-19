@@ -1,0 +1,9 @@
+<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>דוח הערכת נכס | מפלסים</title><meta name="description" content="דוח נכס חינם: עסקאות אמת באותו רחוב, מפת סביבה והערכת שווי — מפלסים מובילים בנדל״ן">
+<style>body{margin:0;font-family:system-ui,sans-serif;background:#0E182C;color:#fff;display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center}a{color:#57BAEA}</style></head>
+<body><div><h2>מעבירים אתכם לטופס דוח הנכס…</h2><p id="m"></p></div>
+<script>
+// הכתובת הנוכחית של המערכת נשמרת ב-url.json ומתעדכנת אוטומטית
+fetch('url.json?'+Date.now()).then(r=>r.json()).then(j=>{const t=j.url+(location.hash.startsWith('#/r/')?location.hash.slice(1):'/');location.replace(t)})
+.catch(()=>{document.getElementById('m').innerHTML='המערכת לא זמינה כרגע. נסו שוב בעוד כמה דקות, או התקשרו 052-2707685.'});
+</script></body></html>
